@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  height: 800px;
+}
+
+.sidebar {
+  width: 33%;
+  background-image: url("./images/unsplash-forest.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  margin-top: 40%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba( 150, 150, 150, .3);
+}
+
+.imageCredit,
+.imageCredit > a {
+  color: white;
+  text-align: center;
+  font-size: 0.6rem;
+  margin-bottom: 5%;
+}
+
+.brandName {
+  font-size: clamp(2rem, 3rem, 4rem);
+  font-weight: 900;
+}
+
+label {
+  display: block;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+  
+form {
+  border-top: 0.1rem solid rgba( 150, 150, 150, .2);
+  border-bottom: 0.2rem solid rgba( 150, 150, 150, .4);
+}
+
+.signUpContainer {
+  width: 66%;
+}
+
+.form_field,
+.login,
+p,
+button {
+  margin-left: 2rem;
+}
+
+
+

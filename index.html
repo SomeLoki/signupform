@@ -4,55 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
-  <link rel="style" href="./style.css"
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="logo"></div>
       <div class="logo">
-        <a href="./images/" class="logo"></a>
-        <div class="brandName"></div>
+        <img src="./images/wolf.svg" alt="black outline of a wolf" class="brandLogo" width="150" height="150"></a>
+        <div class="brandName">FENRIR</div>
       </div>
-      <div class="imageCredit">Photo by Name on Unsplash</div>
+      <div class="imageCredit">Photo by <a href="https://unsplash.com/@elijahdhiett?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Elijah Hiett</a> on <a href="https://unsplash.com/photos/mountain-covered-with-fogs-f0huI7_HjWw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </div>
     </div>
     <div class="signUpContainer">
       <div class="callToAction">
-        <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
-        <h3>You <em>know</em> you want to.</h3>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
       </div>
       <div class="signUp">
-      <h3>Let's do this!</h3>
       <form action="post" class="register">
+        <p>Let's do this!</p>
         <fieldset>
-          <div class="first_name">
+          <div class="form_field">
             <label for="first_name">FIRST NAME *</label>
             <input type="text" name="first_name" id="first_name" placeholder="Rusty" required>
           </div>
-          <div class="last_name">
+          <div class="form_field">
             <label for="last_name">LAST NAME *</label>
             <input type="text" name="last_name" id="last_name" placeholder="Wolf" required>
           </div>
-          <div class="email">
+          <div class="form_field">
             <label for="email">EMAIL *</label>
             <input type="email" name="email" id="email" placeholder="" required>
           </div>
-          <div class="phone_number">
+          <div class="form_field">
             <label for="phone_number">PHONE NUMBER</label>
             <input type="tel" name="phone_number" id="phone_number" placeholder="" >
           </div>
-          <div class="password">
+          <div class="form_field">
             <label for="password">PASSWORD *</label>
             <input type="password" name="password" id="password" placeholder="" required>
           </div>
-          <div class="confirm_password">
+          <div class="form_field">
             <label for="confirm_password">CONFIRM PASSWORD *</label>
             <input type="password" name="confirm_password" id="confirm_password" placeholder="" required>
           </div>
-      </fieldset>
-      <button type="submit" class="create_account">Create Account</button>
+        </fieldset>
       </form>
-      <p class="login">Already have an account? Log in</p>
+      <button type="submit" form="register" class="create_account">Create Account</button>
+      <p class="login">Already have an account? <a href="#">Log in</a></p>
     </div>
   </div>
 
