@@ -4,46 +4,81 @@
   margin: 0;
 }
 
-body {
+.callToAction,
+.signUpFooter {
+  padding: 1rem 0rem;
+}
+
+.register {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+body,
+.container,
+.sidebar,
+.logo,
+fieldset,
+.signUpContainer,
+.callToAction {
   display: flex;
-  align-items: center;
+}
+
+body,
+.logo {
   justify-content: center;
+}
+
+body,
+.logo {
+  align-items: center;
+}
+
+.sidebar,
+.signUpContainer,
+.callToAction {
+  flex-direction: column;
+}
+
+body {
   font-size: 1.2rem;
   font-weight: 700;
 }
 
 .container {
-  display: flex;
-  width: 1200px;
-  height: 800px;
+  width: min(1200px, 70dvw);
+  height: min(800px, 100dvh);
 }
 
 .sidebar {
   width: 33%;
   background-image: url("./images/unsplash-forest.jpg");
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .logo{
-  display: flex;
-  margin-top: 40%;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba( 150, 150, 150, .3);
+  margin-top: 37%;
+  background-color: rgba(255, 245, 245, 0.4);
+}
+
+.brandLogo {
+  width: 125px;
+  height: 125px;
 }
 
 .imageCredit,
-.imageCredit > a {
+.imageCredit > div > a {
   color: white;
   text-align: center;
   font-size: 0.6rem;
+}
+
+.imageCredit {
   margin-bottom: 5%;
 }
 
 .brandName {
-  font-size: clamp(2rem, 3rem, 4rem);
+  font-size: clamp(2rem, 2.5rem, 3rem);
   font-weight: 900;
 }
 
@@ -52,14 +87,13 @@ label {
 }
 
 fieldset {
-  display: flex;
   flex-wrap: wrap;
   border: none;
+  gap: 0.75rem;
 }
   
 form {
-  border-top: 0.1rem solid rgba( 150, 150, 150, .2);
-  border-bottom: 0.2rem solid rgba( 150, 150, 150, .4);
+  box-shadow: -1px 0.4rem 8px rgba( 150, 150, 150, .4);
 }
 
 .signUpContainer {
@@ -73,5 +107,68 @@ button {
   margin-left: 2rem;
 }
 
+.callToAction,
+.signUpFooter {
+  background-color: rgba(201, 195, 195, 0.2);
+  flex: 1;
+}
+
+.callToAction {
+justify-content: flex-end;
+text-wrap-style: pretty;
+}
+
+p:first-child {
+  max-width: 83%;
+  padding-bottom: 1rem;
+}
+
+p + p {
+  padding-bottom: 1.5rem;
+}
+
+.signUp {
+  flex: 1;
+}
+
+label {
+  font-size: 0.6rem;
+}
+
+.login {
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+  font-weight: 400;
+}
+
+.login > a {
+  text-decoration: none;
+  color: rgb(3, 27, 3);
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: rgb(3, 27, 3);
+  color: white;
+  border-radius: 10px;
+}
+
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #98add8;
+  box-shadow: 0px 0px 3px #98add8;
+  
+}
+
+input[type="password"]:invalid {
+  outline: none;
+  border: 1px solid #bd1414;
+}
 
 
